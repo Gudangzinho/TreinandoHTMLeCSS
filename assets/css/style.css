@@ -1,0 +1,92 @@
+/* Header responsavel pela logo e estilização do cabeçalho*/
+.header img {
+    display: flex;
+    justify-content: left;
+    height: 50px;
+    width: auto;
+    margin-left: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(166, 166, 166),rgb(138, 135, 135));
+}
+
+/* Menu esta nomeado como container*/
+.container {    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10rem;
+}
+
+.container a:hover {
+    color: rgb(0, 0, 0);
+}
+.container a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* img moto é a maior foto que ocupa toda a pagina e se ajusta de acordo com o tamanho da tela*/
+.img-moto {
+    max-width: 100%;
+    justify-items: auto;
+}
+#img-menor {
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    flex-wrap: row wrap;
+}
+
+.ajustar-texto {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+
+/* footer com logos e links etc*/
+.img-icon img {
+    height: 50px;
+    width: 50px;
+    padding-top: 1rem;
+}
+
+#footer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(166, 166, 166),rgb(138, 135, 135));
+}
+
+.form-flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.alinhar-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+    color: red;
+}

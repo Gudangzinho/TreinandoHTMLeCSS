@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Igor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <!-- Aqui vai a logo (quero que fique localizada a esquerda e o menu centralizado)-->
+            <img src="assets/img/kawasaki.png" alt="logo kawasaki">
+        </div>
+        <div class="container">
+            <div>
+                <!-- Aqui vai o menu centralizado-->
+                <a href="index.html"> Home </a>
+                <a href="sobre.html"> Motos </a>
+                <a href="contato.html"> Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="alinhar-form">
+        <div class="ajustar-texto">
+            <form class="form-flex">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="insira seu nome" onkeyup="validarNome()">
+                <div class="mb-10" id="erroNome"></div>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="email@email.com" id="email" onkeyup="validarEmail()">
+                <div class="mb-10" id="erroEmail"></div>
+
+                <label for="assunto">Assunto:</label>
+                <select name="select" id="selecionar" required>
+                    <option value="">Selecione uma Opção</option>
+                    <option value="1">Dúvidas Gerais</option>
+                    <option value="2">Reclamações</option>
+                </select>
+                <textarea name="assunto" placeholder="SUA MENSAGEM" id="assunto" cols="50" rows="10" onkeyup="validarAssunto()"></textarea>
+                <div class="mb-10" id="erroAssunto"></div>
+
+                <button class="tm-btn" onclick="valida()">Enviar</button>
+            </form>
+        </div>
+
+        <script src="assets/js/script.js"></script>
+</body>
+
+</html>
